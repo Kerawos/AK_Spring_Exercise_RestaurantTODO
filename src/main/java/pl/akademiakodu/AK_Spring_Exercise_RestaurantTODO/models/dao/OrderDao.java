@@ -1,9 +1,11 @@
 package pl.akademiakodu.AK_Spring_Exercise_RestaurantTODO.models.dao;
 
+import org.springframework.stereotype.Repository;
 import pl.akademiakodu.AK_Spring_Exercise_RestaurantTODO.models.Meal;
 
 import java.util.List;
 
+@Repository
 public interface OrderDao {
     List<OrderR> getAllOrders();
     void addOrder(OrderR order);
