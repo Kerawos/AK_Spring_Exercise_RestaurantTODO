@@ -1,15 +1,30 @@
-package pl.akademiakodu.AK_Spring_Exercise_RestaurantTODO.models.dao;
+package pl.akademiakodu.AK_Spring_Exercise_RestaurantTODO.models.services.dao;
 
+/**
+ * Imports section
+ */
+import org.springframework.stereotype.Service;
 import pl.akademiakodu.AK_Spring_Exercise_RestaurantTODO.models.Meal;
+import pl.akademiakodu.AK_Spring_Exercise_RestaurantTODO.models.OrderR;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * Class responsible for order logic
+ */
+@Service
 public class OrderDaoImpl implements OrderDao {
 
+    /**
+     * Order list stored all created orders (individual)
+     */
     private List<OrderR> orderList;
 
+    /**
+     * Constructor
+     */
     public OrderDaoImpl() {
         orderList = new ArrayList<>();
     }
